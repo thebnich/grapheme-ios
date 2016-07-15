@@ -11,7 +11,33 @@
 		D365B47F1D1C592800C6A9CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365B47E1D1C592800C6A9CA /* ViewController.swift */; };
 		D365B4841D1C592800C6A9CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D365B4831D1C592800C6A9CA /* Assets.xcassets */; };
 		D365B4871D1C592800C6A9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D365B4851D1C592800C6A9CA /* LaunchScreen.storyboard */; };
+		D365B49B1D1C908200C6A9CA /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365B49A1D1C908200C6A9CA /* UIColorExtensions.swift */; };
+		D365B49D1D1C90B800C6A9CA /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365B49C1D1C90B800C6A9CA /* UIConstants.swift */; };
+		D365B49F1D1C91E500C6A9CA /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365B49E1D1C91E500C6A9CA /* InsetTextField.swift */; };
+		D365B4A31D1C960600C6A9CA /* ResultsTableProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365B4A21D1C960600C6A9CA /* ResultsTableProvider.swift */; };
+		D365B4DA1D1DBA7E00C6A9CA /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D365B4C71D1DB98700C6A9CA /* CouchbaseLite.framework */; };
+		D365B4DB1D1DBA7E00C6A9CA /* CouchbaseLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D365B4C71D1DB98700C6A9CA /* CouchbaseLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D365B4DE1D1DBCBC00C6A9CA /* SiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365B4DD1D1DBCBC00C6A9CA /* SiteDatabase.swift */; };
+		D38BE91D1D2F21EE00974C08 /* Reader.css in Resources */ = {isa = PBXBuildFile; fileRef = D38BE91C1D2F21EE00974C08 /* Reader.css */; };
+		D38BE91F1D2F253A00974C08 /* Reader.html in Resources */ = {isa = PBXBuildFile; fileRef = D38BE91E1D2F253A00974C08 /* Reader.html */; };
+		D38BE9211D3058A400974C08 /* ReaderMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38BE9201D3058A400974C08 /* ReaderMatch.swift */; };
+		D3F63D261D2331C2006B3279 /* Readability.js in Resources */ = {isa = PBXBuildFile; fileRef = D3F63D251D2331C2006B3279 /* Readability.js */; };
+		D3F63D2D1D233263006B3279 /* ReaderParser.js in Resources */ = {isa = PBXBuildFile; fileRef = D3F63D2C1D233263006B3279 /* ReaderParser.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D365B4DC1D1DBA7E00C6A9CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D365B4DB1D1DBA7E00C6A9CA /* CouchbaseLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D365B4791D1C592800C6A9CA /* Grapheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grapheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +46,17 @@
 		D365B4831D1C592800C6A9CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D365B4861D1C592800C6A9CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D365B4881D1C592800C6A9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D365B49A1D1C908200C6A9CA /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		D365B49C1D1C90B800C6A9CA /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		D365B49E1D1C91E500C6A9CA /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		D365B4A21D1C960600C6A9CA /* ResultsTableProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableProvider.swift; sourceTree = "<group>"; };
+		D365B4C71D1DB98700C6A9CA /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLite.framework; path = Carthage/Build/iOS/CouchbaseLite.framework; sourceTree = "<group>"; };
+		D365B4DD1D1DBCBC00C6A9CA /* SiteDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteDatabase.swift; sourceTree = "<group>"; };
+		D38BE91C1D2F21EE00974C08 /* Reader.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Reader.css; sourceTree = "<group>"; };
+		D38BE91E1D2F253A00974C08 /* Reader.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Reader.html; sourceTree = "<group>"; };
+		D38BE9201D3058A400974C08 /* ReaderMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderMatch.swift; sourceTree = "<group>"; };
+		D3F63D251D2331C2006B3279 /* Readability.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Readability.js; path = Carthage/Checkouts/readability/Readability.js; sourceTree = "<group>"; };
+		D3F63D2C1D233263006B3279 /* ReaderParser.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ReaderParser.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D365B4DA1D1DBA7E00C6A9CA /* CouchbaseLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +74,10 @@
 		D365B4701D1C592800C6A9CA = {
 			isa = PBXGroup;
 			children = (
+				D365B4C71D1DB98700C6A9CA /* CouchbaseLite.framework */,
 				D365B47B1D1C592800C6A9CA /* Grapheme */,
 				D365B47A1D1C592800C6A9CA /* Products */,
+				D3F63D241D2331A7006B3279 /* Third Party */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +92,38 @@
 		D365B47B1D1C592800C6A9CA /* Grapheme */ = {
 			isa = PBXGroup;
 			children = (
+				D38BE91C1D2F21EE00974C08 /* Reader.css */,
+				D38BE91E1D2F253A00974C08 /* Reader.html */,
+				D3F63D2C1D233263006B3279 /* ReaderParser.js */,
+				D365B4881D1C592800C6A9CA /* Info.plist */,
 				D365B47C1D1C592800C6A9CA /* AppDelegate.swift */,
+				D365B49E1D1C91E500C6A9CA /* InsetTextField.swift */,
+				D38BE9201D3058A400974C08 /* ReaderMatch.swift */,
+				D365B4A21D1C960600C6A9CA /* ResultsTableProvider.swift */,
+				D365B4DD1D1DBCBC00C6A9CA /* SiteDatabase.swift */,
+				D365B49C1D1C90B800C6A9CA /* UIConstants.swift */,
 				D365B47E1D1C592800C6A9CA /* ViewController.swift */,
 				D365B4831D1C592800C6A9CA /* Assets.xcassets */,
+				D365B4991D1C907100C6A9CA /* Extensions */,
 				D365B4851D1C592800C6A9CA /* LaunchScreen.storyboard */,
-				D365B4881D1C592800C6A9CA /* Info.plist */,
 			);
 			path = Grapheme;
+			sourceTree = "<group>";
+		};
+		D365B4991D1C907100C6A9CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D365B49A1D1C908200C6A9CA /* UIColorExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D3F63D241D2331A7006B3279 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				D3F63D251D2331C2006B3279 /* Readability.js */,
+			);
+			name = "Third Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +136,7 @@
 				D365B4751D1C592800C6A9CA /* Sources */,
 				D365B4761D1C592800C6A9CA /* Frameworks */,
 				D365B4771D1C592800C6A9CA /* Resources */,
+				D365B4DC1D1DBA7E00C6A9CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,7 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D365B4871D1C592800C6A9CA /* LaunchScreen.storyboard in Resources */,
+				D38BE91F1D2F253A00974C08 /* Reader.html in Resources */,
 				D365B4841D1C592800C6A9CA /* Assets.xcassets in Resources */,
+				D3F63D261D2331C2006B3279 /* Readability.js in Resources */,
+				D38BE91D1D2F21EE00974C08 /* Reader.css in Resources */,
+				D3F63D2D1D233263006B3279 /* ReaderParser.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D365B47F1D1C592800C6A9CA /* ViewController.swift in Sources */,
+				D365B49D1D1C90B800C6A9CA /* UIConstants.swift in Sources */,
 				D365B47D1D1C592800C6A9CA /* AppDelegate.swift in Sources */,
+				D38BE9211D3058A400974C08 /* ReaderMatch.swift in Sources */,
+				D365B49B1D1C908200C6A9CA /* UIColorExtensions.swift in Sources */,
+				D365B49F1D1C91E500C6A9CA /* InsetTextField.swift in Sources */,
+				D365B4A31D1C960600C6A9CA /* ResultsTableProvider.swift in Sources */,
+				D365B4DE1D1DBCBC00C6A9CA /* SiteDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +315,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Grapheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thebnich.Grapheme;
@@ -250,6 +330,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Grapheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thebnich.Grapheme;
@@ -276,6 +360,7 @@
 				D365B48D1D1C592800C6A9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
